@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capricorn ♑︎</title>
+    <style>
+    
+    body{
+        background: #fbc9ff;
+
+    }
+h1 {
+  text-align: center;
+ font-size: 50px ;
+ font-weight: 500px;
+ font-family: 'Times New Roman';
+ margin: 20px;
+ color: white;
+
+}
+
+hr{
+height: 1px;
+    background-color: #9f6abe;
+    border: none;
+}
+
+p { 
+    text-align: center;
+    border: solid  #9f6abe;
+    color: navy;
+     font-family: 'Times New Roman';
+    font-size: 18px;
+    
+}
+
+h2{ 
+text-align: center;
+ font-size: 50px ;
+ font-weight: 500px;
+ font-family: 'Times New Roman';
+ margin: 10px;
+ color: white;
+}
+
+img{
+    display: block;
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+button{
+display: block;
+margin: 0 auto;
+border: solid 2px  #9f6abe;
+padding: 20px;
+font-size: 12px;
+font-family:'Courier New';
+background-color: #9f6abe;
+box-shadow: 3px 3px 0 0 #828282;
+color: white;
+transition: all 200ms ease-in-out;
+        cursor: pointer;
+    
+}
+
+button:hover{display: block;
+margin: 0 auto;
+font-family:'Courier New';
+background-color: white;
+    color:#9f6abe;
+
+}
+
+.content{
+    display: block;
+    width: 45%;
+    margin: 20px auto;
+    padding: 50px;
+    background: linear-gradient(#b87fd9, #fbc9ff);
+    border-radius: 200px;
+}
+
+ .date-trait {
+          text-align: center;
+          font-family:'Courier New';
+          font-size: 12px;
+          color: navy;
+          line-height: 15px;
+         }
+
+.names{
+    display: block;    
+    text-align: center;
+    font-family:'Courier New';
+    font-size:9px;
+     color: navy;
+}
+ .click-famous{
+        display: block;
+        text-align: center;
+        color: #9f6abe;
+        
+    }
+.footer{ 
+    display: block;
+    text-align: center;
+ color: #9f6abe; }
+
+    </style>
+  </head>
+  <body>
+
+<span class="content">
+    <h1>Capricorn</h1>
+    <div class="date-trait"><u>December 21st - January 20th </u><br /><em
+      >Ambitious | Persistent | Realistic | Sensitive | Practical</em
+    ></body> </div>
+    <hr>
+
+    <p>
+      <strong>Capricorn</strong> is the tenth astrological sign in the zodiac
+      out of twelve total zodiac signs, originating from the constellation of
+      Capricornus, the horned goat. <br><br>They are the hardest workers of the zodiac and love nothing more than getting ahead in life. They are ambitious, determined, materialistic and strong. They will keep going when others would’ve given up ten miles back. This makes them great partners in life, as well as friends or collaborators.
+    </p>
+
+    <h2>Famous Capricorns</h2>
+    <a
+      href="https://www.oprahdaily.com/entertainment/g30022052/capricorn-celebrities-list/"
+      target="_blank" class="click-famous"> Click here to see other famous Capricorns!</a>
+    <br />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/032/316/original/Capricorn_Images.jpg?1650464333"
+      alt="An image of 3 heads, the first being Dolly Parton. A woman with big bufont hair in a pink sparkly dress. The second is Orlando Bloom a generic white man with a beard wearing a suit. The third is Michelle Obama. An African American woman with straight black hair wearing a turtle neck with her head resting on her hands with a wedding band on her ring finger"
+    /><span class="names"> Dolly Parton (Jan 19th), Orlando Bloon (13th Jan) & Michelle Obama (17th Jan)</span>
+<br/>
+     <button>Are you a Capricorn?</button>
+    <br />
+    <div class="footer">This page was built by<br/>
+    <a
+      href="https://www.linkedin.com/in/elizabeth-pooke-2442b5172/"
+      target="_blank" >
+      Lizzie Pooke</a></div>
+</span>
+  </body>
+  <script>
+let capButton = document.querySelector("button")
+capButton.addEventListener("click",CapricornQuery)
+
+function CapricornQuery(){
+let name = prompt("What is your name?");
+let birthday = prompt("Is your birthday between December 21st & January 19th?");
+birthday = birthday.toLowerCase().trim();
+if (birthday === "yes"){alert("♑️"+name+" you ARE a Capricorn!♑️");
+} 
+else {alert ("👎"+name+" you AREN'T a Capricorn!👎")}
+}
+ </script>
+</html>
